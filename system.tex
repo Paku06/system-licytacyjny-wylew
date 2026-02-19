@@ -2,14 +2,16 @@
 %polskie zanki
 \usepackage[utf8]{inputenc} % Kodowanie wejściowe (znaki w pliku)
 \usepackage[T1]{fontenc}    % Kodowanie wyjściowe (fonty)
-%tabele
-\usepackage{tabularray}
-%kolor
-\usepackage{xcolor}
+\usepackage{tabularray} %tabele
+\usepackage{xcolor} %kolory
+%pełne kolory
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 %kolory
 \newcommand{\cl}{\color{green}$\clubsuit$ \color{black}}
-\newcommand{\di}{\color{orange}$\diamondsuit$ \color{black}}
-\newcommand{\h}{\color{red}$\heartsuit$ \color{black}}
+\newcommand{\di}{\color{orange}$\vardiamond$ \color{black}}
+\newcommand{\h}{\color{red}$\varheart$ \color{black}}
 \newcommand{\s}{\color{blue}$\spadesuit$ \color{black}}
 \newcommand{\nt}{\textbf{NT} }
 \begin{document}
