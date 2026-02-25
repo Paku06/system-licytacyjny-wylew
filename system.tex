@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}    % Kodowanie wyjściowe (fonty)
 \usepackage{tabularray} %tabele
 \usepackage{xcolor} %kolory
+\definecolor{zielony_kacperek}{RGB}{60,179,113}
 \usepackage{geometry} %marginesy
 \usepackage{hyperref} %hyperlinki
 \hypersetup{
@@ -14,7 +15,7 @@
 \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
 \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 %definiowanie kolorów
-\newcommand{\cl}{\color{green}$\clubsuit$ \color{black}}
+\newcommand{\cl}{\color{zielony_kacperek}$\clubsuit$ \color{black}}
 \newcommand{\di}{\color{orange}$\vardiamond$ \color{black}}
 \newcommand{\h}{\color{red}$\varheart$ \color{black}}
 \newcommand{\s}{\color{blue}$\spadesuit$ \color{black}}
@@ -49,12 +50,12 @@
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	1\cl & 12-14 bal. lub 15-17 5+\cl unbal. lub 18+ \\
-	1\di & 12-17: 5+\di lub 4+\di unbal. \\
+	1\di & 12-17 5+\di lub 4+\di unbal. \\
 	1\h & 12-17 5+\h \\
 	1\s & 12-17 5+\s \\
 	1\nt & 15-17 bal. możliwe 5M\\
-	2\cl & 11-14 (6+\cl lub (5\cl 4M)) (precision)\\
-	2\di & 5-10 6M (minimulti) \\
+	2\cl & 11-14 (6+\cl lub (5\cl 4M)) & precision\\
+	2\di & 5-10 6M & minimulti\\
 	2\h & 5-10 5\h 4+m \\
 	2\s & 5-10 5\s 4+m \\
 	2\nt & 5-10 5+\cl 5+\di \\
@@ -68,8 +69,8 @@
 
 \section{\color{black} Odpowiedzi na 1\cl}
 \begin{center}
-\begin{tblr}{hlines,vlines}
-	1\di & 0-6 lub 16+ \\
+\begin{tblr}{hlines,vlines,hline{2}={0pt}}
+	1\di & 0-6 lub 16+ & z silnym wariantem najczęściej pokazuje się \\&&odzywke z przeskokiem.\\
 	1\h & 7+ 4+\h \\
 	1\h & 7+ 4+\h \\
 	1\nt & 7-10 bez 4M \\
@@ -77,13 +78,12 @@
 	2M & 4-6 6+M \\
 	2\nt & 11 \\
 	3m & 10-11 6+m \\
-	3\h & partner wybiera z której ręki gramy 3\nt \\
-	3\s & transfer na 3\nt \\
-	3\nt & do gry \\ 
+	3\h & 12-13 & partner wybiera z której ręki gramy 3\nt \\
+	3\s & 12-13 & transfer na 3\nt \\
+	3\nt & 12-13 & do gry \\ 
 \end{tblr}
 \end{center}
 \subsection{\color{black} 1\di}
-	Jeśli partner ma silny wariant najczęściej pokazuje odzywke z przeskokiem.
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	1\h & 2+\h \\
@@ -96,18 +96,18 @@
 	3m & 6+m \\
 \end{tblr}
 \end{center}
-\subsection{\color{black} 1\h\s}
+\subsection{\color{black} 1M}
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	1\s & 4+\s \\
 	1\nt & 12-14 \\
 	2\cl & 15-17 5+\cl \\
-	2\di & odwrotka 4455 \\
-	2M & fit 12-14 \\
+	2\di & 18+ 3+M & odwrotka 4455 \\
+	2M & 12-14 fit\\
 	2\h po 1\s & 18+ 5+\h \\
-	2\nt & bal. 18+ bez fita \\
+	2\nt & 18+ GF bal. bez fita \\
 	3m & 18+ 5+m \\
-	3M & fit 15-17 \\
+	3M & 15-17 fit \\
 \end{tblr}
 \end{center}
 
@@ -119,17 +119,17 @@
 	1\s & 7+ 4+\s \\
 	1\nt & 7-10 \\
 	2\cl & GF 12+ \\
-	2\di & 4+\di do gry \\
+	2\di & 4+\di & do gry \\
 	2M & 4-6 6+M \\
 	2\nt & 11 \\
-	3\di & 4+\di do gry \\
-	3\nt & 12-13 do gry \\
-	4\di & 5+\di do gry \\
-	5\di & do gry \\
+	3\di & 4+\di & do gry \\
+	3\nt & 12-13 & do gry \\
+	4\di & 5+\di & do gry \\
+	5\di & ładny układ brak ambicji szlemikowych & do gry \\
 \end{tblr}
 \end{center}
 
-\section{\color{black} Odpowiedzi na 1\h\s}
+\section{\color{black} Odpowiedzi na 1M}
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	1\s & 7+ 4+\s \\
@@ -143,34 +143,35 @@
 	3\di & 7-9 fit 9-kartowy \\
 	3M & 4-6 fit 9-kartowy \\
 	3\nt & 12-13 fit \\
-	4M & do gry \\
+	4M & ładny układ i brak ambicji szlemikowych & do gry \\
 \end{tblr}
 \end{center}
 
 
 \section{\color{black} Odpowiedzi na 1\nt}
 \begin{center}
-\begin{tblr}{hlines,vlines}
-	2\cl & stayman(NIETYPOWY) \\
-	2\di & transfer \\
-	2\h & transfer \\
-	2\s & transfer na młode \\
-	2\nt & inwit do 3\nt \\
+\begin{tblr}{hlines,vlines,hline{2,3,4}={0pt}}
+	2\cl & stayman(Pytanie o starszą 5) & 
+		Może być grany ze słabę ręką kiedy dający Staymana \\&&ma 5+\di 2+\h 2+\s, wtedy pasuje się na odpowiedź partnera.\\&&
+		Poniważ dający 1\nt może mieć 5M to z układami 5-4 i 5-3\\&&w starych dajemy staymana. \\ 
+	2\di & 5+\h & transfer \\
+	2\h & 5+\s & transfer \\
+	2\s & słaba ręka 6+m & transfer na młode, partenr daje 3\cl(pass or corect)\\
+	2\nt & 7-9 & inwit do 3\nt \\
 	3m & 6+ GF \\
 	3M & 5+ GF \\
-	3\nt & do gry \\
-	4\cl & gerber(pytanie o asy) \\
-	4\di & transfer do gry \\
-	4\h & transfer do gry \\
-	4\nt & inwit do szlemika \\
-	5\nt & inwit do szlema \\
-	6\nt lub 7\nt & do gry \\ 
+	3\nt & 10+ & do gry \\
+	4\cl & 17+ gerber(pytanie o asy) & 4\di(0 lub 4),4\h(1),4\s(2),4\nt(3) \\
+	4\di & 6+\h 10+ & transfer do gry \\
+	4\h & 6+\s 10+ & transfer do gry \\
+	4\nt & 15-16 & inwit do szlemika \\
+	5\nt & 19-20 & inwit do szlema, partener daje 6\nt z min. 7\nt z max.\\
+	6\nt & 17-18 & do gry \\
+	7\nt & 21+ & do gry \\ 
 \end{tblr}
 \end{center}
 
 \subsection{\color{black} 2\cl (Stayman)}
-	Może być grany ze słabę ręką kiedy dający Staymana ma 5+\di 2+\h 2+\s, wtedy pasuje się na odpowiedź partnera. \\
-	Poniważ dający 1\nt może mieć 5M to z układami 5-4 i 5-3 w starych dajemy staymana. \\ 
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	2\di & brak 5M \\
@@ -181,20 +182,20 @@
 \subsection{\color{black} 2\cl-2\di}
 \begin{center}
 \begin{tblr}{hlines,vlines}
-	2\h & 4+\h 8+\\
-	2\s & 4+\s 8+ bez 4+\h \\
-	2\nt & inwit do 3\nt bez 4 w \h\s \\
-	3\cl & GF pytanie o starszą 4(gwarantuje starszą 4)\\
-	3\nt & do gry \\
+	2\h & 8+ 4+\h \\
+	2\s & 8+ 4+\s bez 4+\h \\
+	2\nt & 8+ 3\nt bez 4M & inwit do 3\nt\\
+	3\cl & GF pytanie o starszą 4 & partener nie ma 5M ale może mieć 4M\\
+	3\nt & 10+ & do gry \\
 \end{tblr}
 \end{center}
 
 \subsection{\color{black} 2\cl-2\di-2M}
 \begin{center}
-\begin{tblr}{hlines,vlines}
+	\begin{tblr}{hlines,vlines,hline{4}={0pt}}
 	2\s & 4\s \\
 	2\nt & min. brak 4\s \\
-	3\cl & max. brak 4\s \\
+	3\cl & max. (brak 4\s jeśli grane po 2\h) & partner może miec 5 w starych lub 4\h po 2\s więc dajemu\\&&mu możliwość pokazania jej\\
 	3M & fit min. \\
 	4M & fit max. \\
 \end{tblr}
@@ -205,7 +206,7 @@
 \begin{tblr}{hlines,vlines}
 	pass & min.\\
 	3\h po 2\h & 5\h max. \\
-	3\s & 5\s max. \\
+	3\s & 5\s max. & jeśli grane po 2\h to i tak pokazuje piątke ponieważ partenr nie ma 4\s \\
 	3\nt & max. brak 5M \\
 \end{tblr}
 \end{center}
@@ -214,18 +215,19 @@
 \begin{center}
 \begin{tblr}{hlines,vlines}
 	3\h po 2\h & 5\h \\
-	3\s & 5\s \\
+	3\s & 5\s \& jeśli grane po 2\h to i tak pokazuje piątke ponieważ partenr nie ma 4\s \\
 	3\nt & brak 5M \\
 \end{tblr}
 \end{center}
 
 \subsection{\color{black} 2\cl-2M}
 \begin{center}
-\begin{tblr}{hlines,vlines}
+	\begin{tblr}{hlines,vlines,hline{4}={0pt}}
 	2\s po 2\h & 4+\s min. \\
 	2\nt & min. (brak 4\s jeśli grane po 2\h) \\
-	3\cl & max. pytanie o starszą 4 \\
-	3\nt & max. bez starszej 4 \\
+	3\cl & max. starsza 4 i brak fitu & partner może mieć 5-4 w starych więc aby znaleść fita\\&&pytamy się go 2 starszy kolor\\
+	3M & min. fit \\
+	3\nt & max. bez starszej 4 i fitu\\
 \end{tblr}
 \end{center}
 
